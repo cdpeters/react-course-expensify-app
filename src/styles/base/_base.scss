@@ -1,0 +1,28 @@
+// rem's have better support for accessibility
+
+// file name starts with an underscore because it is a partial.
+
+// base is a big picture type style sheet, global font-family and font-size are defined
+
+html {
+  // this makes the font-size = 10px since 1rem was initially 16px (see element tab
+  // in the chrome devtools.
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: $m-size;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+.is-active {
+  font-weight: bold;
+}
